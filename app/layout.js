@@ -10,7 +10,7 @@ const manrope = Manrope({
 });
 
 export const metadata = {
-	title: "DevPortfolio | MERN Stack Developer",
+	title: "Sabbir | MERN Stack Developer",
 	description:
 		"I'm a Frontend-focused MERN Stack Developer specializing in building high-performance, accessible, and visually stunning web applications.",
 };

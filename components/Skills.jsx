@@ -37,7 +37,7 @@ export default function Skills() {
             skills: [
                 { name: "React / Next.js", level: "95%" },
                 { name: "Tailwind CSS", level: "90%" },
-                { name: "TypeScript", level: "85%" },
+                { name: "JavaScript", level: "85%" },
             ],
             tags: ["Framer Motion", "GSAP", "Redux"],
         },
@@ -47,7 +47,7 @@ export default function Skills() {
             skills: [
                 { name: "Node.js / Express", level: "85%" },
                 { name: "MongoDB", level: "80%" },
-                { name: "PostgreSQL", level: "75%" },
+                { name: "BetterAuth", level: "75%" },
             ],
             tags: ["REST APIs", "GraphQL", "JWT"],
         },
@@ -55,9 +55,9 @@ export default function Skills() {
             title: "Tools",
             Icon: FaTools,
             skills: [
-                { name: "Docker / DevOps", level: "75%" },
-                { name: "Git / CI-CD", level: "90%" },
-                { name: "AWS", level: "70%" },
+                { name: "Git / GitHub", level: "75%" },
+                { name: "React Dev Tool", level: "90%" },
+                { name: "VS Code", level: "70%" },
             ],
             tags: ["Postman", "Figma", "Linux"],
         },

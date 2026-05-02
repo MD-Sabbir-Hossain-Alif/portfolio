@@ -18,7 +18,7 @@ export default function Footer() {
                         Sabbir<span className="text-primary">.</span>dev
                     </div>
                     <p className="text-on-surface-variant text-sm">
-                        © 2024 Developer Portfolio. Built with MERN stack &
+                        © 2026 Developer Portfolio. Built with MERN stack &
                         Next.js.
                     </p>
                 </div>
