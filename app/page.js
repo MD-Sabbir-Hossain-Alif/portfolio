@@ -8,18 +8,18 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 export default function Home() {
-  return (
-    <div className="flex flex-col min-h-screen">
-      <Navbar />
-      <main className="flex-grow pt-24 px-8 max-w-7xl mx-auto overflow-hidden">
-        <Hero />
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
-  );
+	return (
+		<div className="flex flex-col min-h-screen">
+			<Navbar />
+			<main className="grow pt-24 px-8 max-w-7xl mx-auto overflow-hidden">
+				<Hero />
+				<About />
+				<Skills />
+				<Experience />
+				<Projects />
+				<Contact />
+			</main>
+			<Footer />
+		</div>
+	);
 }

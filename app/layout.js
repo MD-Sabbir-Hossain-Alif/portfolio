@@ -1,25 +1,28 @@
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { Manrope } from "next/font/google";
+
+const manrope = Manrope({
+	subsets: ["latin"],
+	variable: "--font-manrope",
+	display: "swap",
+});
 
 export const metadata = {
-  title: "DevPortfolio | MERN Stack Developer",
-  description: "I'm a Frontend-focused MERN Stack Developer specializing in building high-performance, accessible, and visually stunning web applications.",
+	title: "DevPortfolio | MERN Stack Developer",
+	description:
+		"I'm a Frontend-focused MERN Stack Developer specializing in building high-performance, accessible, and visually stunning web applications.",
 };
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
-      <head>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" />
-      </head>
-      <body className="font-manrope text-foreground selection-primary transition-colors duration-300">
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <SmoothScroll>
-            {children}
-          </SmoothScroll>
-        </ThemeProvider>
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en" className={manrope.variable} suppressHydrationWarning>
+			<body className="font-manrope text-foreground selection-primary transition-colors duration-300">
+				<ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+					<SmoothScroll>{children}</SmoothScroll>
+				</ThemeProvider>
+			</body>
+		</html>
+	);
 }
