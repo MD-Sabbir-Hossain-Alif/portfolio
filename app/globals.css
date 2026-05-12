@@ -79,9 +79,9 @@
   --color-surface-container-high: var(--surface-container-high);
   --color-surface-container-highest: var(--surface-container-highest);
   --color-on-surface-variant: var(--on-surface-variant);
-  
+
   --font-manrope: "Manrope", sans-serif;
-  
+
   --radius-lg: 0.5rem;
   --radius-xl: 0.75rem;
   --radius-2xl: 1rem;
@@ -91,27 +91,11 @@
 body {
   background: var(--background);
   background: radial-gradient(circle at top right, var(--grad-1), var(--grad-2) 40%),
-              radial-gradient(circle at bottom left, var(--grad-3), var(--grad-2) 40%);
+    radial-gradient(circle at bottom left, var(--grad-3), var(--grad-2) 40%);
   background-attachment: fixed;
   color: var(--foreground);
   font-family: var(--font-manrope);
   overflow-x: hidden;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Selective transitions for theme-aware properties */
-.glass-panel, 
-button, 
-input, 
-textarea, 
-a, 
-span, 
-h1, h2, h3, h4, h5, h6, 
-p {
-  transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
-              border-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
-              color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
-              box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .glass-panel {

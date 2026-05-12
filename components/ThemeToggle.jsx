@@ -20,7 +20,7 @@ export default function ThemeToggle() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="p-2 rounded-xl bg-primary-container/20 border border-primary/20 text-primary transition-colors hover:bg-primary-container/30"
+            className="p-2 rounded-xl bg-primary-container/20 border border-primary/20 text-primary transition-colors hover:bg-primary-container/30 cursor-pointer"
             aria-label="Toggle theme"
         >
             <span className="material-symbols-outlined">
