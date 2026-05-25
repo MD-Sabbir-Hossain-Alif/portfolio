@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en" className={manrope.variable} suppressHydrationWarning>
 			<body className="font-manrope text-foreground selection-primary transition-colors duration-300">
-				<ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+				<ThemeProvider attribute="class" defaultTheme="dark">
 					<SmoothScroll>{children}</SmoothScroll>
 				</ThemeProvider>
 			</body>

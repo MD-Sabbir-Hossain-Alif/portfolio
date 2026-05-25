@@ -11,10 +11,14 @@ export default function About() {
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    whileHover={{ y: -5 }}
                     viewport={{ once: true }}
+                    whileHover={{
+                        y: -5,
+                        scale: 1.015,
+                        boxShadow: "0px 20px 40px rgba(0, 0, 0, 0.15)",
+                    }}
                     transition={{ duration: 0.6 }}
-                    className="lg:col-span-2 glass-panel p-10 rounded-3xl space-y-6 hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500"
+                    className="lg:col-span-2 glass-panel p-10 rounded-3xl space-y-6 transition-colors duration-300 hover:border-neutral-500/30"
                 >
                     <h2 className="text-3xl md:text-4xl font-bold text-foreground">
                         The Journey Behind the Code
@@ -24,15 +28,15 @@ export default function About() {
                         gap between complex backend logic and intuitive user
                         experiences. My journey started with a fascination for
                         how data moves across the web, leading me to master
-                        React's component-based architecture and Node.js's
-                        efficient runtime.
+                        React&apos;s component-based architecture and
+                        Node.js&lsquo;s efficient runtime.
                     </p>
                     <p className="text-on-surface-variant leading-relaxed">
                         Beyond the screen, I find balance through creative and
                         active pursuits. I am an avid painter, where I explore
                         color theory that often translates back into my UI
-                        designs. On weekends, you'll likely find me on the court
-                        or field, staying sharp through sports.
+                        designs. On weekends, you&apos;ll likely find me on the
+                        court or field, staying sharp through sports.
                     </p>
                 </motion.div>
 
@@ -48,7 +52,7 @@ export default function About() {
                             whileHover={{ scale: 1.05 }}
                             className="flex items-center gap-5 group cursor-pointer"
                         >
-                            <div className="w-14 h-14 rounded-2xl bg-tertiary-container flex items-center justify-center shadow-lg shadow-tertiary-container/20 group-hover:bg-primary/20 transition-colors">
+                            <div className="w-14 h-14 rounded-2xl bg-primary-container flex items-center justify-center shadow-lg shadow-tertiary-container/20 group-hover:bg-primary/20 transition-colors">
                                 <MdTravelExplore size={24} />
                             </div>
                             <div>
@@ -79,8 +83,8 @@ export default function About() {
                         </motion.div>
 
                         <div className="mt-4 p-4 rounded-2xl bg-surface-container-highest/30 border border-primary/10 text-sm text-center italic text-on-surface-variant">
-                            "Balance is not something you find, it's something
-                            you create."
+                            &quot;Balance is not something you find, it&apos;s
+                            something you create.&quot;
                         </div>
                     </div>
                 </motion.div>
