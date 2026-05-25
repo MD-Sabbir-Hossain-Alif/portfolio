@@ -48,9 +48,14 @@ export default function Navbar() {
                 )}
                 <div className="flex items-center gap-4">
                     <ThemeToggle />
-                    <button className="bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-semibold active:scale-95 transition-transform hover:bg-primary-container/80 border border-primary/20 cursor-pointer">
-                        Resume
-                    </button>
+                    <Link
+                        href="/md_sabbir_hossain_alif_resume.pdf"
+                        download="Sabbir_Resume.pdf"
+                    >
+                        <button className="bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-semibold active:scale-95 transition-transform hover:bg-primary-container/80 border border-primary/20 cursor-pointer">
+                            Resume
+                        </button>
+                    </Link>
                 </div>
             </nav>
         </motion.header>

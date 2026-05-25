@@ -7,6 +7,7 @@ import { IoLink } from "react-icons/io5";
 import { BsChatLeftText } from "react-icons/bs";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function Hero() {
     const [index, setIndex] = useState(0);
@@ -23,7 +24,7 @@ export default function Hero() {
     useEffect(() => {
         const interval = setInterval(() => {
             setIndex((prevIndex) => (prevIndex + 1) % words.length);
-        }, 2000);
+        }, 3000);
 
         return () => clearInterval(interval);
     }, [words.length]);
@@ -121,10 +122,15 @@ export default function Hero() {
                     visually stunning web applications.
                 </motion.p>
                 <div className="flex flex-wrap gap-4 pt-4">
-                    <button className="px-8 py-4 bg-primary-container text-on-primary-container rounded-xl font-bold flex items-center gap-2 hover:opacity-90 transition-all shadow-lg shadow-primary-container/20 active:scale-95 cursor-pointer">
-                        <FiDownload size={24} />
-                        Download Resume
-                    </button>
+                    <Link
+                        href="/md_sabbir_hossain_alif_resume.pdf"
+                        download="Sabbir_Resume.pdf"
+                    >
+                        <button className="px-8 py-4 bg-primary-container text-on-primary-container rounded-xl font-bold flex items-center gap-2 hover:opacity-90 transition-all shadow-lg shadow-primary-container/20 active:scale-95 cursor-pointer">
+                            <FiDownload size={24} />
+                            Download Resume
+                        </button>
+                    </Link>
                     <div className="flex gap-4 items-center pl-4">
                         {icons.map((Icon, i) => (
                             <a

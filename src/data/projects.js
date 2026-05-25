@@ -2,51 +2,51 @@ export const projects = [
 	{
 		id: "mediqueue",
 		title: "MediQueue",
-		description: "Real-time data visualization platform built with React, D3.js and Socket.io.",
-		fullDescription: "CloudScale Analytics is a enterprise-grade data visualization platform designed to handle high-frequency data streams. It uses D3.js for complex charting and Socket.io for real-time updates. The backend is built with Node.js and MongoDB to ensure scalability and performance.",
-		tags: ["MERN", "D3.JS", "Socket.io"],
+		description: "A smart platform for students to find tutors, book sessions, and manage classes effortlessly.A smart platform for students to find tutors, book sessions, and manage classes effortlessly.",
+		fullDescription: "MediQueue is a modern tutor booking web application where students can register, browse available tutors, and book online or offline learning sessions based on subject and time availability.The system generates digital session tokens for each booking and allows users to manage their scheduled classes efficiently.",
+		tags: ["MERN", "AUTH", "JWT"],
 		image: "https://i.ibb.co.com/Fv5xK9c/mediqueue.png",
 		features: [
-			"Real-time dashboard updates",
-			"Custom D3.js visualization components",
-			"Role-based access control",
-			"Exportable PDF reports"
+			"Smart Tutor Booking System",
+			"Secure Authentication with JWT",
+			"Real-Time Search & Filter",
+			"Session Management & Booking History"
 		],
-		techStack: ["React", "Node.js", "MongoDB", "Express", "D3.js", "Socket.io", "Tailwind CSS"],
+		techStack: ["React", "Next.js", "Node.js", "MongoDB", "Express.js", "ShadcnUi", "JWT", "Tailwind CSS"],
 		github: "https://github.com/MD-Sabbir-Hossain-Alif/mediqueue",
 		demo: "https://mediqueue-gamma.vercel.app"
 	},
 	{
 		id: "tiles-gallery",
 		title: "Tiles-Gallery",
-		description: "Premium e-commerce experience with integrated Stripe payments and CMS.",
-		fullDescription: "LuxeMarket Hub is a high-end e-commerce storefront focused on luxury lifestyle products. It features a seamless checkout process with Stripe, a custom CMS for product management, and a highly responsive UI built with Next.js.",
-		tags: ["NEXT.JS", "STRIPE", "CMS"],
+		description: "A beautiful, fully responsive tile showcase website built with Next.js.",
+		fullDescription: "This project is a modern web application designed to showcase various types of tiles (ceramic, modern, geometric, etc.). It provides users with an intuitive gallery experience to browse products, view detailed information, and manage their profile after authentication.",
+		tags: ["NEXT.JS", "REACT.JS", "MONGODB"],
 		image: "https://i.ibb.co.com/4wTfBghH/tiles-gallery.png",
 		features: [
-			"Secure Stripe payments",
-			"Dynamic product categories",
-			"Inventory management system",
-			"SEO optimized pages"
+			"Authentication System",
+			"Featured Tiles & Marquee",
+			"Smooth Animations",
+			"Loader States & Error Handling"
 		],
-		techStack: ["Next.js", "React", "Stripe", "Prisma", "PostgreSQL", "Tailwind CSS", "Framer Motion"],
+		techStack: ["Next.js", "React", "Express.js", "Better-Auth", "MongoDB", "Tailwind CSS", "React-Spring"],
 		github: "https://github.com/MD-Sabbir-Hossain-Alif/tiles-gallery",
 		demo: "https://tiles-gallery-five-zeta.vercel.app"
 	},
 	{
 		id: "keen-keeper",
 		title: "Keen Keeper",
-		description: "Collaborative task manager featuring drag-and-drop and real-time sync.",
-		fullDescription: "SyncTask Pro is a productivity tool for teams that need real-time collaboration. It features a Kanban-style task board with drag-and-drop functionality, live activity feeds, and deep integration with Slack and Discord.",
-		tags: ["REDUX", "NODE.JS", "SOCKET.IO"],
+		description: "KeenKeeper is a modern web app designed to help you maintain and strengthen your friendships.",
+		fullDescription: "It reminds you to stay connected, track interactions, and visualize your social relationships over time. In today’s busy world, it’s easy to lose touch with friends. KeenKeeper helps you stay mindful of your relationships by tracking when you last connected and providing insights through visual data.",
+		tags: ["RECHARTS", "NEXT.JS", "DasiyUI"],
 		image: "https://i.ibb.co.com/sdKqJr7S/keen-keeper.png",
 		features: [
-			"Drag-and-drop Kanban board",
-			"Real-time team collaboration",
+			"Smooth user experience",
+			"Filtering interactions",
 			"Push notifications",
-			"Team activity analytics"
+			"Visual activity statistics"
 		],
-		techStack: ["React", "Redux Toolkit", "Node.js", "Express", "MongoDB", "Socket.io", "Tailwind CSS"],
+		techStack: ["React", "DasiyUI", "Node.js", "Recharts", "React Toastify", "Tailwind CSS"],
 		github: "https://github.com/MD-Sabbir-Hossain-Alif/keen-keeper",
 		demo: "https://keen-keeper-iota-nine.vercel.app"
 	}

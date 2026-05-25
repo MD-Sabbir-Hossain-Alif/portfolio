@@ -37,7 +37,7 @@ export default function Contact() {
             >
                 <div className="space-y-8">
                     <h2 className="text-display text-foreground">
-                        Let's Build Something{" "}
+                        Let&apos;s Build Something{" "}
                         <span className="text-primary">Incredible</span>
                     </h2>
                     <p className="text-on-surface-variant text-lg">
@@ -58,7 +58,7 @@ export default function Contact() {
                                     <p className="text-[10px] text-on-surface-variant font-bold uppercase tracking-widest">
                                         {info.label}
                                     </p>
-                                    <p className="text-foreground font-bold">
+                                    <p className="text-foreground font-semibold">
                                         {info.value}
                                     </p>
                                 </div>
@@ -74,7 +74,7 @@ export default function Contact() {
                         </label>
                         <input
                             type="text"
-                            className="w-full rounded-2xl px-6 py-4 focus:outline-none focus:border-primary transition-all backdrop-blur-md bg-surface-container/50 border border-surface-container-highest/50 text-foreground focus:bg-surface-container-highest/30"
+                            className="w-full rounded-2xl px-6 py-4 focus:outline-none focus:border-primary transition-all backdrop-blur-md bg-surface-container/50 border-2 border-surface-container-highest text-foreground focus:bg-surface-container-highest/30"
                             placeholder="John Doe"
                         />
                     </div>
@@ -84,7 +84,7 @@ export default function Contact() {
                         </label>
                         <input
                             type="email"
-                            className="w-full rounded-2xl px-6 py-4 focus:outline-none focus:border-primary transition-all backdrop-blur-md bg-surface-container/50 border border-surface-container-highest/50 text-foreground focus:bg-surface-container-highest/30"
+                            className="w-full rounded-2xl px-6 py-4 focus:outline-none focus:border-primary transition-all backdrop-blur-md bg-surface-container/50 border-2 border-surface-container-highest text-foreground focus:bg-surface-container-highest/30"
                             placeholder="john@example.com"
                         />
                     </div>
@@ -93,11 +93,11 @@ export default function Contact() {
                             Message
                         </label>
                         <textarea
-                            className="w-full rounded-2xl px-6 py-4 focus:outline-none focus:border-primary transition-all backdrop-blur-md bg-surface-container/50 border border-surface-container-highest/50 text-foreground focus:bg-surface-container-highest/30 min-h-37.5"
+                            className="w-full rounded-2xl px-6 py-4 focus:outline-none focus:border-primary transition-all backdrop-blur-md bg-surface-container/50 border-2 border-surface-container-highest text-foreground focus:bg-surface-container-highest/30 min-h-37.5"
                             placeholder="Tell me about your project..."
                         />
                     </div>
-                    <button className="w-full py-4 bg-primary text-background font-bold rounded-2xl active:scale-[0.98] transition-all hover:shadow-[0_0_30px_rgba(156,202,255,0.4)] flex items-center justify-center gap-2 group">
+                    <button className="w-full py-4 border-2 border-surface-container-highest hover:text-on-primary-container font-bold rounded-2xl active:scale-[0.98] transition-all hover:bg-primary-container/80 flex items-center justify-center gap-2 group cursor-pointer">
                         <span className="material-symbols-outlined group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">
                             <FiSend />
                         </span>
