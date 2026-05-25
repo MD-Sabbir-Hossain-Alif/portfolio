@@ -121,7 +121,7 @@ export default function Hero() {
                     visually stunning web applications.
                 </motion.p>
                 <div className="flex flex-wrap gap-4 pt-4">
-                    <button className="px-8 py-4 bg-primary-container text-on-primary-container rounded-xl font-bold flex items-center gap-2 hover:opacity-90 transition-all shadow-lg shadow-primary-container/20 active:scale-95">
+                    <button className="px-8 py-4 bg-primary-container text-on-primary-container rounded-xl font-bold flex items-center gap-2 hover:opacity-90 transition-all shadow-lg shadow-primary-container/20 active:scale-95 cursor-pointer">
                         <FiDownload size={24} />
                         Download Resume
                     </button>

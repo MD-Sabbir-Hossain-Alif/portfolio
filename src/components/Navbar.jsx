@@ -26,9 +26,9 @@ export default function Navbar() {
             <nav className="flex justify-between items-center max-w-7xl mx-auto px-8 py-4">
                 <Link
                     href="/"
-                    className="text-xl font-extrabold text-foreground tracking-widest"
+                    className="text-xl md:text-2xl font-extrabold text-foreground tracking-widest"
                 >
-                    Sabbir.dev
+                    Sabbir<span className="text-primary">.</span>dev
                 </Link>
                 {currentPath === "/" ? (
                     <div className="hidden md:flex items-center gap-8">

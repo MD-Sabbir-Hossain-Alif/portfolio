@@ -43,9 +43,10 @@ export default function Experience() {
     ];
 
     return (
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 py-20">
+        <section className="py-20">
+            {/* grid grid-cols-1 lg:grid-cols-2 gap-8 */}
             {/* Experience */}
-            <motion.div
+            {/* <motion.div
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -80,8 +81,7 @@ export default function Experience() {
                         </div>
                     ))}
                 </div>
-            </motion.div>
-
+            </motion.div> */}
             {/* Education */}
             <motion.div
                 initial={{ opacity: 0, x: 30 }}

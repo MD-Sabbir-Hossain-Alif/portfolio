@@ -4,21 +4,22 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { projects } from "@/src/data/projects";
 import { MdArrowOutward } from "react-icons/md";
+import Image from "next/image";
 
 export default function Projects() {
     return (
         <section id="projects" className="py-20 space-y-12">
             <div className="flex justify-between items-end">
                 <h2 className="text-display text-foreground">Selected Works</h2>
-                <a
-                    href="#"
+                <Link
+                    href="https://github.com/MD-Sabbir-Hossain-Alif"
                     className="text-primary hover:underline font-semibold flex items-center gap-2 group"
                 >
-                    View Portfolio
+                    View GitHub
                     <span className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">
                         <MdArrowOutward />
                     </span>
-                </a>
+                </Link>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -32,15 +33,17 @@ export default function Projects() {
                         className="glass-panel rounded-3xl overflow-hidden group hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500"
                     >
                         <div className="h-56 overflow-hidden relative z-0">
-                            <img
+                            <Image
+                                height={224}
+                                width={300}
                                 src={project.image}
                                 alt={project.title}
                                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out"
                             />
                             <div className="absolute inset-0 bg-slate-900/70 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center backdrop-blur-xs z-10 pointer-events-none group-hover:pointer-events-auto">
                                 <Link href={`/projects/${project.id}`}>
-                                    <button className="bg-white text-slate-900 px-8 py-3 rounded-full font-bold transform translate-y-6 group-hover:translate-y-0 transition-all duration-500 hover:scale-110 active:scale-95 shadow-xl">
-                                        View Case Study
+                                    <button className="bg-primary text-white px-4 py-2 rounded-full font-bold transform translate-y-6 group-hover:translate-y-0 transition-all duration-500 hover:scale-105 active:scale-95 shadow-xl cursor-pointer">
+                                        Case Study
                                     </button>
                                 </Link>
                             </div>
@@ -63,8 +66,8 @@ export default function Projects() {
                                 ))}
                             </div>
                             <Link href={`/projects/${project.id}`}>
-                                <button className="w-full py-3 rounded-xl border border-primary/20 hover:bg-primary-container hover:text-on-primary-container transition-all text-sm font-bold active:scale-95">
-                                    View Project
+                                <button className="w-full py-3 rounded-xl border border-primary/20 hover:bg-primary-container hover:text-on-primary-container transition-all text-sm font-bold active:scale-95 cursor-pointer">
+                                    Project Details
                                 </button>
                             </Link>
                         </div>

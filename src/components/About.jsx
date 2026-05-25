@@ -83,8 +83,9 @@ export default function About() {
                         </motion.div>
 
                         <div className="mt-4 p-4 rounded-2xl bg-surface-container-highest/30 border border-primary/10 text-sm text-center italic text-on-surface-variant">
-                            &quot;Balance is not something you find, it&apos;s
-                            something you create.&quot;
+                            {
+                                '"Balance is not something you find, it\'s something you create."'
+                            }
                         </div>
                     </div>
                 </motion.div>
