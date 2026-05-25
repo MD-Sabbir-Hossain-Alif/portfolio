@@ -26,7 +26,7 @@ export default function Footer() {
 
     return (
         <footer className="w-full border-t border-primary/10 mt-20 bg-background/80 backdrop-blur-xl antialiased">
-            <div className="max-w-7xl mx-auto px-8 py-4 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div className="max-w-7xl mx-auto px-8 py-4 flex flex-col-reverse md:flex-row justify-between items-center gap-8">
                 <div className="space-y-2 text-center md:text-left">
                     {/* <div className="text-2xl md:text-3xl font-black text-foreground tracking-tighter">
                         Sabbir<span className="text-primary">.</span>dev

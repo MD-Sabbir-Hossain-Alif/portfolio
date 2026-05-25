@@ -8,6 +8,7 @@ import Navbar from "@/src/components/Navbar";
 import Footer from "@/src/components/Footer";
 import { IoArrowBack } from "react-icons/io5";
 import { FaRegCheckCircle } from "react-icons/fa";
+import Image from "next/image";
 
 export default function ProjectDetails() {
     const { id } = useParams();
@@ -65,12 +66,16 @@ export default function ProjectDetails() {
                             {project.description}
                         </p>
                         <div className="flex gap-4 pt-4">
-                            <button className="px-8 py-4 bg-primary text-background font-bold rounded-xl active:scale-95 transition-all shadow-lg shadow-primary/20">
-                                Live Demo
-                            </button>
-                            <button className="px-8 py-4 glass-panel text-foreground font-bold rounded-xl active:scale-95 transition-all">
-                                GitHub Repository
-                            </button>
+                            <Link href={project.demo}>
+                                <button className="px-8 py-4 bg-primary text-background font-bold rounded-xl active:scale-95 transition-all shadow-lg shadow-primary/20 cursor-pointer">
+                                    Live Demo
+                                </button>
+                            </Link>
+                            <Link href={project.github}>
+                                <button className="px-8 py-4 glass-panel text-foreground font-bold rounded-xl active:scale-95 transition-all cursor-pointer">
+                                    GitHub Repository
+                                </button>
+                            </Link>
                         </div>
                     </motion.div>
 
@@ -79,7 +84,9 @@ export default function ProjectDetails() {
                         animate={{ opacity: 1, scale: 1 }}
                         className="glass-panel p-2 rounded-[40px] overflow-hidden shadow-2xl"
                     >
-                        <img
+                        <Image
+                            height={400}
+                            width={500}
                             src={project.image}
                             alt={project.title}
                             className="w-full aspect-video object-cover rounded-4xl"
