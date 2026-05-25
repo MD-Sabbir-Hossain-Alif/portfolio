@@ -35,7 +35,7 @@ export default function Experience() {
         {
             title: "B.A. in Philosophy",
             school: "Carmichael College, Rangpur",
-            period: "2023 - 2027",
+            period: "2022 - 2026",
             description:
                 "Studies consciousness, identity, and the relationship between mind and body.",
             color: "slate-500",
