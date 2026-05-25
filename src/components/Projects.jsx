@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { projects } from "@/data/projects";
+import { projects } from "@/src/data/projects";
 import { MdArrowOutward } from "react-icons/md";
 
 export default function Projects() {

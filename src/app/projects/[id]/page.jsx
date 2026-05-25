@@ -1,11 +1,11 @@
 "use client";
 
 import { useParams } from "next/navigation";
-import { projects } from "@/data/projects";
+import { projects } from "@/src/data/projects";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Navbar from "@/src/components/Navbar";
+import Footer from "@/src/components/Footer";
 import { IoArrowBack } from "react-icons/io5";
 import { FaRegCheckCircle } from "react-icons/fa";
 

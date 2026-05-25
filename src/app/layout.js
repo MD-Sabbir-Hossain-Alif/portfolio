@@ -1,6 +1,6 @@
 import "./globals.css";
-import SmoothScroll from "@/components/SmoothScroll";
-import { ThemeProvider } from "@/components/ThemeProvider";
+import SmoothScroll from "@/src/components/SmoothScroll";
+import { ThemeProvider } from "@/src/components/ThemeProvider";
 import { Manrope } from "next/font/google";
 
 const manrope = Manrope({
